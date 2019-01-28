@@ -43,22 +43,23 @@ In join algorithms, we usually filter or merge our intermediate data at early st
 Because single HDD has few parallelism to supply multi-threaded 8 consumer, IO operation need to be carefully schedualed, or processors will be hungry. I found few achives about this case, might because HDDs and types are too old and we have much cheaper SSDs, so there is no need to do researches on them?   
 ## Check list:
 
-basic join algorthm
+* [x] basic join algorthm
 
-prefetch file to make use of parallelism between CPU and DMA
+* [ ] prefetch file to make use of parallelism between CPU and DMA
 
-multi-thread in memory sort
+* [ ] multi-thread in memory sort
 
-multi-thread merge sort
+* [ ] multi-thread merge sort
 
-multi-thread join
+* [ ] multi-thread join
 
 ## How to use:
 
-This project is developed by clion. You can also compile using cmake if you are familiar with it.
+This project is developed by clion. You can also compile using cmake， if you are familiar with it.
 
 ## file structure
->.  
+<pre>
+.  
 ├── CMakeLists.txt  
 ├── README.md  
 ├── lib  
@@ -66,7 +67,7 @@ This project is developed by clion. You can also compile using cmake if you are 
 │   ├── DataGenerator.h  
 │   ├── Includes.cpp  
 │   ├── Includes.h  
-│   ├── Log.cpp
+│   ├── Log.cpp  
 │   ├── Log.h  
 │   ├── Processing.cpp  
 │   ├── Processing.h  
@@ -77,4 +78,5 @@ This project is developed by clion. You can also compile using cmake if you are 
     ├── Test_DataGenerator.cpp  
     ├── Test_RecordBuffer.cpp  
     └── Test_sort.cpp  
+</pre>
 
